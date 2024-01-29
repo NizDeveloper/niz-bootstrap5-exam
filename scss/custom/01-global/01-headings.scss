@@ -1,0 +1,37 @@
+@import '../00-mixin/14-headings.scss';
+
+h1{
+  @include headings($sm, 30);
+  @include headings($md, 32);
+  @include headings($lg, 37);
+  @include headings($xl, 40);
+}
+
+h2{
+  @include headings($sm, 27);
+  @include headings($md, 28);
+  @include headings($lg, 30);
+  @include headings($xl, 32);
+}
+
+h3{
+  @include headings($sm, 24);
+  @include headings($md, 25);
+  @include headings($lg, 26);
+  @include headings($xl, 28);
+}
+
+h4{
+  @include headings($sm, 22);
+  @include headings($md, 22);
+  @include headings($lg, 23);
+  @include headings($xl, 24);
+}
+
+h5{
+  @include headings($sm, 20);
+}
+
+h6{
+  @include headings($sm, 16);
+}

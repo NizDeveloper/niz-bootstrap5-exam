@@ -1,0 +1,7 @@
+@mixin border-radius($string){
+  -webkit-border-radius: $string;
+  -moz-border-radius: $string;
+  -ms-border-radius: $string;
+  -o-border-radius: $string;
+  border-radius: $string;
+}

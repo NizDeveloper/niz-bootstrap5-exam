@@ -1,0 +1,28 @@
+.section5{
+  a{
+    img{
+      transition: all 0.4s;
+    }
+    
+    .content-card{
+      width: 75%;
+      transform: translate(25px, 25px);
+    }
+
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .section5{
+    a{
+      .content-card{
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+@mixin mask-image($string) {
+  -webkit-mask-image: $string;
+  mask-image: $string;
+}

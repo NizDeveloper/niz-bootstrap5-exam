@@ -1,0 +1,13 @@
+@mixin headings($media, $font-px){
+  $rem-value: ($font-px / 16);
+
+  @media screen and (min-width: $media){
+    font-size: $rem-value + rem;
+  }
+}
+
+//Breakpoints
+$sm : 375px;
+$md : 768px;
+$lg : 1024px;
+$xl : 1440px;

@@ -1,0 +1,160 @@
+.navbar{
+  .nav-custom{
+    .nav-item{
+      > .nav-link{
+        &:hover{
+          transition: all 0.2s;
+          color: #000;
+          background-color: $gray;
+        }
+      }
+
+      .active{
+        background-color: $gray;
+      }
+    }
+
+    .dropdown-menu{
+      .nav-link{
+        &:hover{
+          transition: all 0.2s;
+          color: #000;
+          background-color: $gray;
+        }
+      }
+
+      .active{
+        background-color: $gray;
+      }
+    }
+
+    .icon-link{
+      &:hover{
+        svg{
+          transition: all 0.3s;
+          transform: scale(1.1);
+        }
+      }
+
+      .icon{
+        width: 25px;
+      }
+    }
+  }
+
+  .logo_nav{
+    width: 100px;
+    height: 49px;
+  }
+
+  .icon_item{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    + .icon_item{
+      margin-left: 15px;
+    }
+
+    &:hover{
+      transition: all 0.3s;
+      transform: scale(1.1);
+    }
+  }
+
+  svg{
+    fill: #044b61;
+  }
+
+  .offcanvas{
+    .social{
+      background-color: $gray;
+
+      .icon-item{
+        svg{
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .navbar{
+    .nav-custom{
+      .nav-item{
+        > .nav-link{
+          position: relative;
+
+          &:hover{
+            background: transparent;
+            color: $primary;
+
+            &::before{
+              transition: all 0.5s;
+              width: 100%;
+            }
+          }
+
+          &::before{
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            width: 0%;
+            height: 2px;
+            background-color: $primary;
+          }
+        }
+
+        .nav-link{
+          background-color: transparent;
+        }
+
+        .active{
+          color: $primary;
+          background: transparent;
+
+          &:hover{
+            color: $primary;
+          }
+
+          &::before{
+            width: 100%;
+          }
+        }
+
+        .dropdown-menu{
+          font-size: 14px;
+
+          .nav-drop{
+            li + li{
+              margin-top: 10px;
+              font-size: 14px;
+            }
+          }
+
+          > * + *{
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .dropdown-menu{
+        .nav-link{
+          &:hover{
+            transition: all 0.2s;
+            color: $primary;
+            background-color: transparent;
+          }
+        }
+      }
+
+      .card{
+        .img{
+          height: 150px;
+        }
+      }
+    }
+  }
+}

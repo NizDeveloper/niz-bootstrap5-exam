@@ -1,0 +1,59 @@
+.section7{
+  height: 550px;
+
+  .content-section{
+    width: 100%;
+
+    .carousel{
+      .carousel-inner{
+        .carousel-item{
+          .manager{
+            &::before{
+              content: '';
+              background-color: $primary;
+              position: absolute;
+              top: -3px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 60px;
+              height: 2px;
+            }
+          }
+        }
+
+        .d-inline-block{
+          width: 90%;
+        }
+      }
+
+      .carousel-indicators{
+        button{
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md){
+  .section7{
+    .content-section{
+      .carousel{
+        .carousel-inner{
+          .d-inline-block{
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl){
+  .section7{
+    .content-section{
+      width: 60%;
+    }
+  }
+}

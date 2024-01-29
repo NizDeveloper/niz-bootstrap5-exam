@@ -1,0 +1,34 @@
+.section2{
+  .card{
+    a{
+      &:hover{
+        .card-img{
+          img{
+            transition: all 0.4s;
+            transform: scale(1.1);
+          }
+        }
+
+        .card-body{
+          .icon{
+            transform: scaleX(1.2);
+          }
+        }
+      }
+
+      .card-img{
+        img{
+          transition: all 0.4s;
+        }
+      }
+
+      .card-body{
+        .icon{
+          svg{
+            fill: $primary;
+          }
+        }
+      }
+    }
+  }
+}

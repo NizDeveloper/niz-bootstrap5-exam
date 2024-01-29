@@ -1,0 +1,2394 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANDORA</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <section class="advertisement">
+      <div id="carouselHeader" class="carousel slide" data-bs-touch="true">
+        <div class="carousel-inner text-white text-center">
+          <div class="carousel-item active bg-dark py-2" data-bs-interval="3000">
+            <div class="container-xxl">
+              <div class="d-block w-100">
+                <p>New Offers This Weekend only to Get 50%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item bg-primary py-2" data-bs-interval="3000">
+            <div class="container-xxl">
+              <div class="d-block w-100">
+                <p>Free Shipping On Domestic Orders Over $150</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev d-none d-md-flex" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
+
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next d-none d-md-flex" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
+          <span class="carousel-control-next-icon icon cursor-pointer" aria-hidden="true"></span>
+
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <nav class="navbar bg-white navbar-expand-lg position-sticky w-100 z-3 top-0">
+      <div class="container-xxl">
+        <div class="icons_nav d-flex align-items-center">
+          <div class="icon_item d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" viewBox="0 0 32 32">
+              <path d="M0 26.667h32M0 16h26.98M0 5.333h32" stroke="currentColor"></path>
+            </svg>
+          </div>
+
+          <!-- Launch Modal -->
+          <div class="icon_item m-lg-0" data-bs-toggle="modal" data-bs-target="#ModalSearch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+          <!-- Launch Modal -->
+
+          <div class="icon_item d-none d-lg-block">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+            <span class="badge">14</span>
+          </div>
+        </div>
+
+        <a class="navbar-brand d-block d-lg-none" href="#">
+          <div class="logo_nav">
+            <picture>
+              <img src="img/00-navbar/logo.png" alt="PANDORA">
+            </picture>
+          </div>
+        </a>
+
+        <!-- Nav Lnks-->
+        <div class=" offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <div class="logo_nav">
+              <a href="#">
+                <picture>
+                  <img src="img/00-navbar/logo.png" alt="Logo de PANDORA">
+                </picture>
+              </a>
+            </div>
+
+            <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <div class="navbar-nav justify-content-start  align-items-center flex-grow-1">
+              <ul class="nav-custom d-flex list-unstyled m-0 flex-column flex-lg-row justify-content-start justify-content-lg-evenly align-items-lg-center w-100">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active p-2 p-lg-0">Home</a>
+                </li>
+
+                <!-- Drop 1 -->
+                <li class="nav-item p-lg-0">
+                  <a href="#" class="nav-link dropdown-toggle p-2 p-lg-0" data-bs-toggle="dropdown">Jewellery</a>
+
+                  <div class="dropdown-menu w-100 m-0">
+                    <div class="container-xxl d-none d-lg-block">
+                      <div class="row">
+                        <div class="col">
+                          <ul class="nav-drop p-0">
+                            <li class="fs-6 fw-bold">
+                              <a href="#" class="nav-link">Necklaces</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Gold Necklace</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Collar Necklace</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Necklace</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Earrings Buti</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col">
+                          <ul class="nav-drop p-0">
+                            <li class="fs-6 fw-bold">
+                              <a href="#" class="nav-link">Bracelets</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Nosepin</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Wedding & Bridal</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Diamond Ring</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Toe Ring</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col">
+                          <ul class="nav-drop p-0">
+                            <li class="fs-6 fw-bold">
+                              <a href="#" class="nav-link">Wedding & Bridal</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Antique Jewellery</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Bridal lewellery</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Gold Jewellery</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Handmade jewellery</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col">
+                          <div class="card border-0">
+                            <div class="img">
+                              <img src="img/00-navbar/img1-drop1.jpeg" alt="Productos de PANDORA">
+                            </div>
+
+                            <div class="card-body p-0 mt-3 spacer-top">
+                              <h5 class="card-title">100% Real</h5>
+
+                              <p class="card-text">Aliquam erat volutpat. Integer pharetra ultricies iaculis.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card border-0">
+                            <div class="img">
+                              <img src="img/00-navbar/img2-drop1.jpg" alt="Mujer con aretes">
+                            </div>
+
+                            <div class="card-body p-0 mt-3 spacer-top">
+                              <h5 class="card-title">100% Ethical</h5>
+
+                              <p class="card-text">Aliquam erat volutpat. Integer pharetra ultricies iaculis.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card border-0">
+                            <div class="img position-relative">
+                              <img src="img/00-navbar/img3-drop1.jpeg" alt="Mujer con aretes">
+
+                              <span class="position-absolute top-0 start-0 badge text-bg-primary">Sale</span>
+                            </div>
+
+                            <div class="card-body p-0 mt-3 spacer-top">
+                              <h5 class="card-title">Gold And Diamond Stud...</h5>
+
+                              <p class="text-decoration-line-through">$150.00</p>
+
+                              <p>$140.00</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-block d-lg-none">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                </li>
+                <!-- Drop 1 -->
+
+                <!-- Drop 2 -->
+                <li class="nav-item p-lg-0">
+                  <a href="#" class="nav-link dropdown-toggle p-2 p-lg-0" data-bs-toggle="dropdown">Themes</a>
+
+                  <div class="dropdown-menu w-100 m-0">
+                    <div class="container-xxl d-none d-lg-block">
+                      <div class="row">
+                        <div class="col">
+                          <ul class="nav-drop p-0">
+                            <li class="fs-6 fw-bold">
+                              <a href="#" class="nav-link">Collection Layouts</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Left Sidebar</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Right Sidebar</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Grid layout</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Horizontal layout</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Fullwidth lavout</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col">
+                          <ul class="nav-drop p-0">
+                            <li class="fs-6 fw-bold">
+                              <a href="#" class="nav-link">Product Layouts</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Default Layout</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Product Layout1</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Product Layout2</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Product Layout3</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Product Layout4</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col">
+                          <ul class="nav-drop p-0">
+                            <li class="fs-6 fw-bold">
+                              <a href="#" class="nav-link">Features</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Mega Menu</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Mini Cart</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Free Shipping Bar</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Instagram Feed</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Color Swatch</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Ajax Filter</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Infinite Scroll</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Instagram Feed</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Multiple Header layout</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Multiple Footer layout</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col">
+                          <ul class="nav-drop p-0">
+                            <li class="fs-6 fw-bold">
+                              <a href="#" class="nav-link">Features2</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Social Sharing</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Product Reviews</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Unlimited Languages</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Unlimited Currency</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Live Sales Notification</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Newsletter Popup</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Delivery Time</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Time Countdown</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col">
+                          <ul class="nav-drop p-0">
+                            <li class="fs-6 fw-bold">
+                              <a href="#" class="nav-link">Pages</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">About page 1</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">About page 2</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Contact page 1</a>
+                            </li>
+
+                            <li>
+                              <a href="#" class="nav-link">Contact page 1</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col">
+                          <div class="card border-0">
+                            <div class="img position-relative">
+                              <img src="img/00-navbar/img1-drop2.jpg" class="rounded" alt="Mujer con collar">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-block d-lg-none">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                </li>
+                <!-- Drop 2 -->
+
+                <li>
+                  <a class="navbar-brand d-none d-lg-block" href="#">
+                    <div class="logo_nav">
+                      <picture>
+                        <img src="img/00-navbar/logo.png" alt="PANDORA">
+                      </picture>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item p-lg-0">
+                  <a href="#" class="nav-link p-2 p-lg-0">Blog</a>
+                </li>
+
+                <li class="nav-item p-lg-0">
+                  <a href="#" class="nav-link p-2 p-lg-0">Contact</a>
+                </li>
+
+                <!-- Drop 3 -->
+                <li class="nav-item dropdown p-lg-0">
+                  <a href="#" class="nav-link dropdown-toggle p-2 p-lg-0" data-bs-toggle="dropdown">More</a>
+
+                  <div class="dropdown-menu p-0 p-lg-2 m-0 mt-lg-1">
+                    <a class="nav-link p-2 p-lg-0" href="#">About US</a>
+
+                    <a class="nav-link p-2 p-lg-0" href="#">Earrings</a>
+
+                    <a class="nav-link p-2 p-lg-0" href="#">Pendants</a>
+
+                    <a class="nav-link p-2 p-lg-0" href="#">Catalog</a>
+
+                    <a class="nav-link p-2 p-lg-0" href="#">Necklaces</a>
+
+                    <a class="nav-link p-2 p-lg-0" href="#">Bangles</a>
+
+                    <a class="nav-link p-2 p-lg-0" href="#">Chains</a>
+                  </div>
+                </li>
+                <!-- Drop 3 -->
+
+                <li class="d-block d-lg-none">
+                  <a href="#" class="icon-link p-2 p-lg-0 w-100">
+                    <div class="icon position-relative">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path></svg>
+
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">0</span>
+                    </div>
+
+                    <span class="text-black">wishlist</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="social p-3 pt-5 w-100 position-absolute bottom-0 start-0 d-flex align-items-center spacer-left d-lg-none">
+              <div class="icon-item">
+                <div class="bg-white p-2 rounded-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                </div>
+              </div>
+
+              <div class="icon-item">
+                <div class="bg-white p-2 rounded-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                </div>
+              </div>
+
+              <div class="icon-item">
+                <div class="bg-white p-2 rounded-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+                </div>
+              </div>
+
+              <div class="icon-item">
+                <div class="bg-white p-2 rounded-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Nav Lnks-->
+
+        <div class="icons_nav d-flex">
+          <div class="icon_item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+          </div>
+
+          <div class="icon_item">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"/></g></svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade z-5" id="ModalSearch" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog mb-0 mx-0">
+        <div class="modal-content rounded-0">
+          <div class="modal-body">
+            <div class="container-lg d-flex align-items-center justify-content-center spacer-left">
+              <div class="search input-group border rounded-pill">
+                <input class="form-control rounded border-0 shadow-none rounded-pill" type="text" placeholder="Search">
+
+                <button class="btn input-group-text bg-white border-0 rounded-pill" id="addon-wrapping">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </button>
+              </div>
+
+              <div class="icon">
+                <button class="btn-close shadow-none" data-bs-dismiss="modal"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+
+    <section class="hero">
+      <div id="carouselHero" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="hero1 carousel-item active">
+            <div class="img-hero position-relative w-100">
+              <picture class="position-absolute">
+                <img src="img/01-hero/hero1.png" alt="Mujer con productos de PANDORA">
+              </picture>
+            </div>
+
+            <div class="content-hero position-absolute start-0 py-5 py-md-0 w-100">
+              <div class="container-xxl text-center">
+                <div class="text-hero spacer-top text-dark d-inline-block">
+                  <h1 class="text-uppercase">Elegant Collections</h1>
+
+                  <p class="text-uppercase">Thoughtfully Desidned Lab-Grown Diamond Rings For a Bright Future.</p>
+
+                  <button type="button" class="btn btn-primary btn-primary-hover1 rounded-pill spacer-left icon-link text-uppercase">
+                    Shop Now
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero2 carousel-item">
+            <div class="img-hero position-relative w-100">
+              <picture class="position-absolute">
+                <source media="(min-width: 768px)" srcset="img/01-hero/hero2-md.png">
+                <img src="img/01-hero/hero2.png" alt="experimented diver" />
+              </picture>
+            </div>
+
+            <div class="content-hero position-absolute start-0 py-5 py-md-0 w-100">
+              <div class="container-xxl text-center">
+                <div class="text-hero spacer-top d-inline-block">
+                  <h1 class="text-uppercase">Elegant Collections</h1>
+
+                  <p class="text-uppercase">Thoughtfully Desidned Lab-Grown Diamond Rings For a Bright Future.</p>
+
+                  <button type="button" class="btn btn-primary btn-primary-hover2 rounded-pill spacer-left icon-link text-uppercase">
+                    Shop Now
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-indicators mb-0">
+          <button class="bg-primary active rounded-circle border-0" type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+
+          <button class="bg-primary rounded-circle border-0" type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section1 py-xl-5 py-4">
+      <div class="px-2 px-md-4">
+        <div class="content">
+          <div class="container-xxl">
+            <div class="bg-info rounded">
+              <div class="content text-center py-5 spacer-top">
+                <h2 class="text-uppercase">Shop By Shape</h2>
+
+                <div class="row container-cards justify-content-around">
+                  <div class="col-4 col-md-auto col-xxl">
+                    <a href="#" class="custom-card position-relative">
+                      <div class="card-content spacer-top text-center">
+                        <div class="card-img d-inline-block border border-secondary rounded-circle bg-white position-relative">
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <picture class="rounded-circle">
+                              <img src="img/02-section1/jewelry1.png" alt="Producto de PANDORA" class="rounded-circle">
+                            </picture>
+                          </div>
+                        </div>
+
+                        <div class="card-text position-relative">
+                          <p class="d-inline-block text-uppercase">Round</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-4 col-md-auto col-xxl">
+                    <a href="#" class="custom-card position-relative">
+                      <div class="card-content spacer-top text-center">
+                        <div class="card-img d-inline-block border border-secondary rounded-circle bg-white position-relative">
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <picture class="rounded-circle">
+                              <img src="img/02-section1/jewelry2.png" alt="Producto de PANDORA" class="rounded-circle">
+                            </picture>
+                          </div>
+                        </div>
+
+                        <div class="card-text position-relative">
+                          <p class="text-uppercase">Diamond</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-4 col-md-auto col-xxl">
+                    <a href="#" class="custom-card position-relative">
+                      <div class="card-content spacer-top text-center">
+                        <div class="card-img d-inline-block border border-secondary rounded-circle bg-white position-relative">
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <picture class="rounded-circle">
+                              <img src="img/02-section1/jewelry3.png" alt="Producto de PANDORA" class="rounded-circle">
+                            </picture>
+                          </div>
+                        </div>
+
+                        <div class="card-text position-relative">
+                          <p class="text-uppercase">Emerald</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-4 col-md-auto col-xxl mt-3 mt-md-0">
+                    <a href="#" class="custom-card position-relative">
+                      <div class="card-content spacer-top text-center">
+                        <div class="card-img d-inline-block border border-secondary rounded-circle bg-white position-relative">
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <picture class="rounded-circle">
+                              <img src="img/02-section1/jewelry4.png" alt="Producto de PANDORA" class="rounded-circle">
+                            </picture>
+                          </div>
+                        </div>
+
+                        <div class="card-text position-relative">
+                          <p class="text-uppercase">Pear</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-4 col-md-auto col-xxl mt-3 mt-md-0">
+                    <a href="#" class="custom-card position-relative">
+                      <div class="card-content spacer-top text-center">
+                        <div class="card-img d-inline-block border border-secondary rounded-circle bg-white position-relative">
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <picture class="rounded-circle">
+                              <img src="img/02-section1/jewelry5.png" alt="Producto de PANDORA" class="rounded-circle">
+                            </picture>
+                          </div>
+                        </div>
+
+                        <div class="card-text position-relative">
+                          <p class="text-uppercase">Princess</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-4 col-md-auto col-xxl mt-3 mt-lg-0">
+                    <a href="#" class="custom-card position-relative">
+                      <div class="card-content spacer-top text-center">
+                        <div class="card-img d-inline-block border border-secondary rounded-circle bg-white position-relative">
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <picture class="rounded-circle">
+                              <img src="img/02-section1/jewelry6.png" alt="Producto de PANDORA" class="rounded-circle">
+                            </picture>
+                          </div>
+                        </div>
+
+                        <div class="card-text position-relative">
+                          <p class="text-uppercase">Radiant</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-4 col-md-auto col-xxl mt-3 mt-xxl-0">
+                    <a href="#" class="custom-card position-relative">
+                      <div class="card-content spacer-top text-center">
+                        <div class="card-img d-inline-block border border-secondary rounded-circle bg-white position-relative">
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <picture class="rounded-circle">
+                              <img src="img/02-section1/jewelry7.png" alt="Producto de PANDORA" class="rounded-circle">
+                            </picture>
+                          </div>
+                        </div>
+
+                        <div class="card-text position-relative">
+                          <p class="text-uppercase">Asscher</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-4 col-md-auto col-xxl mt-3 mt-xxl-0">
+                    <a href="#" class="custom-card position-relative">
+                      <div class="card-content spacer-top text-center">
+                        <div class="card-img d-inline-block border border-secondary rounded-circle bg-white position-relative">
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <picture class="rounded-circle">
+                              <img src="img/02-section1/jewelry8.png" alt="Producto de PANDORA" class="rounded-circle">
+                            </picture>
+                          </div>
+                        </div>
+
+                        <div class="card-text position-relative">
+                          <p class="text-uppercase">MARQUISE</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-4 col-md-auto col-xxl mt-3 mt-xxl-0">
+                    <a href="#" class="custom-card position-relative">
+                      <div class="card-content spacer-top text-center">
+                        <div class="card-img d-inline-block border border-secondary rounded-circle bg-white position-relative">
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <picture class="rounded-circle">
+                              <img src="img/02-section1/jewelry9.png" alt="Producto de PANDORA" class="rounded-circle">
+                            </picture>
+                          </div>
+                        </div>
+
+                        <div class="card-text position-relative">
+                          <p class="text-uppercase">Heart</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2 py-xl-5 py-4">
+      <div class="container-xxl">
+        <div class="section-title spacer-top text-center">
+          <h2 class="text-uppercase">You May Love</h2>
+
+          <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Nulla Vulputate Sem Id Ante Semper</p>
+        </div>
+
+        <div class="content mt-5">
+          <div class="row text-center">
+            <div class="col-6 col-lg">
+              <div class="card">
+                <a href="#" class="text-black">
+                  <div class="card-img bg-success rounded">
+                    <picture>
+                      <img src="img/03-section2/card1.png" alt="">
+                    </picture>
+                  </div>
+
+                  <div class="card-body text-start spacer-top">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6>Rings</h6>
+
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+                      </div>
+                    </div>
+
+                    <p class="d-none d-md-block">Praesent placerat eros auctor nulla atue scelerisque, in iaculis</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg">
+              <div class="card">
+                <a href="#" class="text-black">
+                  <div class="card-img bg-success rounded">
+                    <picture>
+                      <img src="img/03-section2/card2.png" alt="">
+                    </picture>
+                  </div>
+
+                  <div class="card-body text-start spacer-top">
+                    <div class=" d-flex justify-content-between align-items-center">
+                      <h6>Earrings</h6>
+
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+                      </div>
+                    </div>
+
+                    <p class="d-none d-md-block">Praesent placerat eros auctor nulla atue scelerisque, in iaculis</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg mt-3 mt-lg-0">
+              <div class="card">
+                <a href="#" class="text-black">
+                  <div class="card-img bg-success rounded">
+                    <picture>
+                      <img src="img/03-section2/card3.png" alt="">
+                    </picture>
+                  </div>
+
+                  <div class="card-body text-start spacer-top">
+                    <div class=" d-flex justify-content-between align-items-center">
+                      <h6>Bracelets</h6>
+
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+                      </div>
+                    </div>
+
+                    <p class="d-none d-md-block">Praesent placerat eros auctor nulla atue scelerisque, in iaculis</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg mt-3 mt-lg-0">
+              <div class="card">
+                <a href="#" class="text-black">
+                  <div class="card-img bg-success rounded overflow-hidden">
+                    <picture>
+                      <img src="img/03-section2/card4.png" alt="">
+                    </picture>
+                  </div>
+
+                  <div class="card-body text-start spacer-top">
+                    <div class=" d-flex justify-content-between align-items-center">
+                      <h6>Pendants</h6>
+
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+                      </div>
+                    </div>
+
+                    <p class="d-none d-md-block">Praesent placerat eros auctor nulla atue scelerisque, in iaculis</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg mt-3 mt-lg-0">
+              <div class="card">
+                <a href="#" class="text-black">
+                  <div class="card-img bg-success rounded">
+                    <picture>
+                      <img src="img/03-section2/card5.png" alt="">
+                    </picture>
+                  </div>
+
+                  <div class="card-body text-start spacer-top">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6>Diamond</h6>
+
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+                      </div>
+                    </div>
+
+                    <p class="d-none d-md-block">Praesent placerat eros auctor nulla atue scelerisque, in iaculis</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3 py-xl-5 py-4">
+      <div class="container-xxl spacer-top">
+        <div class="section-title spacer-top text-center">
+          <h2 class="text-uppercase">Trendy Collection</h2>
+
+          <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Nulla Vulputate Sem Id Ante Semper</p>
+        </div>
+
+        <div class="content">
+          <ul class="nav spacer-left d-flex justify-content-center p-0" role="tablist">
+            <li class="item-section" role="presentation">
+              <a href="#link1" class="p-md-2 text-uppercase" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">Best Sellers</a>
+            </li>
+
+            <li class="item-section" role="presentation">
+              <a href="#link2" class="p-md-2 active text-uppercase" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">New Arrivals</a>
+            </li>
+
+            <li class="item-section" role="presentation">
+              <a href="#link3" class="p-md-2 text-uppercase" data-bs-toggle="tab" aria-selected="true" role="tab">Top Trending</a>
+            </li>
+          </ul>
+
+
+          <div class="tab-content mt-4 mt-lg-5">
+            <div class="tab-pane fade" id="link1" role="tabpanel">
+              <!-- tab1 -->
+              <div class="content-cards">
+                <div class="row">
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card1-1.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Jewellery Silver Diamond Ring</p>
+
+                        <p class="mt-2 fw-bold">$230.00</p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="bg-light w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="pink w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card1-2.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Solid Silver Diamond Bar Bracelet</p>
+
+                        <p class="mt-2 fw-bold">$780.00</p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="bg-light w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="salmon w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card1-3.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Silver Plated Wedding Jewellery</p>
+
+                        <p class="mt-2 fw-bold">$230.00</p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="bg-light w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="pink w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 mt-3 mt-lg-0">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card1-4.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Diamond And Silver Earrings</p>
+
+                        <p class="mt-2 fw-bold">$140.00</p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="silver w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="bg-light w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="pink w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="tab-pane fade show active" id="link2" role="tabpanel">
+              <div class="content-cards">
+                <div class="row">
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card1-1.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Jewellery Silver Diamond Ring</p>
+
+                        <p class="mt-2 fw-bold">$230.00</p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="bg-light w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="pink w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card2-2.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <span class="sale position-absolute top-0 start-0 badge text-bg-primary">Sale</span>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Gold And Diamond Stud Earrings</p>
+
+                        <p class="mt-2">
+                          <span class="text-decoration-line-through">$150.00</span>
+
+                          <span class="fw-bold ms-1">$140.00</span>
+                        </p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="silver w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="salmon w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card2-3.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Diamond Silver Necklace</p>
+
+                        <p class="mt-2 fw-bold">$240.00</p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="bg-light w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="pink w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 mt-3 mt-lg-0">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card2-4.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <span class="sale position-absolute top-0 start-0 badge text-bg-primary">Sale</span>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Gold & Diamond Bloom Zirconia Bracelet for Wom...</p>
+
+                        <p class="mt-2">
+                          <span class="text-decoration-line-through">$1,100.00</span>
+
+                          <span class="fw-bold ms-1">$1,000.00</span>
+                        </p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="bg-light w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="pink w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="tab-pane fade" id="link3" role="tabpanel">
+              <div class="content-cards">
+                <div class="row">
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card3-1.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <span class="sale position-absolute top-0 start-0 badge text-bg-primary">Sale</span>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Diamond Jeans With White Gold Ring</p>
+
+                        <p class="mt-2">
+                          <span class="text-decoration-line-through">$200.00</span>
+
+                          <span class="fw-bold ms-1">$190.00</span>
+                        </p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="silver w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="salmon w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card3-2.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <span class="sale position-absolute top-0 start-0 badge text-bg-primary">Sale</span>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Blue Butterfly Pearl Gold Necklace</p>
+
+                        <p class="mt-2">
+                          <span class="text-decoration-line-through">$400.00</span>
+
+                          <span class="fw-bold ms-1">$380.00</span>
+                        </p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="silver w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="salmon w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 mt-3 mt-md-0">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card3-3.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <span class="sale position-absolute top-0 start-0 badge text-bg-primary">Sale</span>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Gold And Diamond Stud Earrings</p>
+
+                        <p class="mt-2">
+                          <span class="text-decoration-line-through">$150.00</span>
+
+                          <span class="fw-bold ms-1">$140.00</span>
+                        </p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="silver w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="salmon w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 mt-3 mt-lg-0">
+                    <div class="card overflow-hidden">
+                      <a href="#" class="card-img-top position-relative">
+                        <div class="img-card rounded">
+                          <picture>
+                            <img src="img/04-section3/card2-2.png" alt="Producto de PANDORA">
+                          </picture>
+                        </div>
+
+                        <span class="sale position-absolute top-0 start-0 badge text-bg-primary">Sale</span>
+
+                        <div class="card-hover position-absolute top-0 end-0 p-2 d-flex flex-column">
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </div>
+                          </div>
+
+                          <div class="icon-item d-inline-block rounded-circle p-1 position-relative mt-2">
+                            <div class="svg position-absolute top-50 start-50 translate-middle">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-body px-0 fs-14">
+                        <p>Gold And Diamond Stud Earrings</p>
+
+                        <p class="mt-2">
+                          <span class="text-decoration-line-through">$150.00</span>
+
+                          <span class="fw-bold ms-1">$140.00</span>
+                        </p>
+
+                        <div class="icons-colors spacer-left mt-1">
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="gold w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="silver w-100 h-100 rounded-circle"></div>
+                          </div>
+
+                          <div class="icon-color d-inline-block border rounded-circle">
+                            <div class="salmon w-100 h-100 rounded-circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 text-center">
+          <button type="button" class="btn btn-primary btn-primary-hover1 rounded-pill spacer-left icon-link text-uppercase">
+            Shop Now
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section4 position-relative">
+      <div class="section-img position-absolute w-100 h-100">
+        <picture>
+          <source srcset="img/05-section4/section-bg-lg.png" media="(min-width: 1024px)">
+
+          <img src="img/05-section4/section-bg.png" alt="par de aretes">
+        </picture>
+      </div>
+
+      <div class="content-section position-absolute">
+        <div class="container-xxl spacer-top">
+          <h2 class="text-uppercase">Lab Grown Diamonds Studs</h2>
+
+          <div class="d-inline-block">
+            <button type="button" class="btn btn-primary btn-primary-hover1 rounded-pill spacer-left icon-link text-uppercase">
+              Shop Now
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section5 py-5">
+      <div class="container-xxl">
+        <div class="section-title spacer-top text-center">
+          <h2 class="text-uppercase">Exclusive Offer!</h2>
+
+          <p>Unbox Your Happiness With TORMETI</p>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6">
+            <a href="#" class="position-relative">
+              <div class="card-img rounded overflow-hidden">
+                <picture>
+                  <img src="img/06-section5/card1.png" class="rounded" alt="Producto de PANDORA">
+                </picture>
+              </div>
+
+              <div class="content-card text-black position-absolute top-0 start-0">
+                <h3 class="text-uppercase">Pandora Gold Jewelry Offer</h3>
+
+                <p>Let's you discover your inner Beauty</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-md-6 mt-3 mt-md-0">
+            <a href="#" class="position-relative">
+              <div class="card-img rounded overflow-hidden">
+                <picture>
+                  <img src="img/06-section5/card2.png" class="rounded" alt="Producto de PANDORA">
+                </picture>
+              </div>
+
+              <div class="content-card text-white position-absolute top-0 start-0">
+                <h3 class="text-uppercase">Pandora Gold Jewelry Offer</h3>
+
+                <p>Let's you discover your inner Beauty</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section6 py-5">
+      <div class="container-xxl spacer-top">
+        <div class="section-title spacer-top text-center">
+          <h2 class="text-uppercase">Our Latest Blog</h2>
+
+          <p>The Freshest And Most Exciting News</p>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card p-2 border">
+              <div class="card-img-top rounded position-relative">
+                <picture class="overflow-hidden">
+                  <img src="img/07-section6/card1.png" class="rounded" alt="Mujer con anillos">
+                </picture>
+              </div>
+
+              <div class="card-body spacer-top">
+                <h5 class="card-title">Seasonal Trends In Jewellery And Accessories</h5>
+
+                <p class="card-text">Nam tempus turpis at metus scelerisque placerat nulla deumantos...</p>
+
+                <a href="#" class="link-primary text-decoration-underline">READ MORE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-0">
+            <div class="card p-2 border">
+              <div class="card-img-top rounded position-relative overflow-hidden">
+                <picture class="overflow-hidden">
+                  <img src="img/07-section6/card2.png" class="rounded" alt="Mujer con anillos">
+                </picture>
+              </div>
+
+              <div class="card-body spacer-top">
+                <h5 class="card-title">Seasonal Trends In Jewellery And Accessories</h5>
+
+                <p class="card-text">Nam tempus turpis at metus scelerisque placerat nulla deumantos...</p>
+
+                <a href="#" class="link-primary text-decoration-underline">READ MORE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mt-3 mt-lg-0">
+            <div class="card p-2 border">
+              <div class="card-img-top rounded position-relative overflow-hidden">
+                <picture class="overflow-hidden">
+                  <img src="img/07-section6/card3.png" class="rounded" alt="Mujer con anillos">
+                </picture>
+              </div>
+
+              <div class="card-body spacer-top">
+                <h5 class="card-title">Seasonal Trends In Jewellery And Accessories</h5>
+
+                <p class="card-text">Nam tempus turpis at metus scelerisque placerat nulla deumantos...</p>
+
+                <div class="link">
+                  <a href="#" class="link-primary text-decoration-underline text-uppercase">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-60 mt-5 d-none d-lg-block p-0">
+            <div class="button-section">
+              <div class="w-100 text-center">
+                <button type="button" class="btn btn-primary btn-primary-hover1 rounded-pill spacer-left icon-link text-uppercase">
+                  Shop Now
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section7 position-relative px-md-3 px-xl-4 overflow-hidden">
+      <div class="position-relative w-100 h-100">
+        <div class="img-section position-absolute w-100 h-100">
+          <picture>
+            <img src="img/08-section7/section-bg.png" alt="">
+          </picture>
+        </div>
+      </div>
+
+      <div class="content-section position-absolute top-50 start-50 translate-middle">
+        <div id="carousel-text" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <div class="d-inline-block">
+                <div class="container-xxl text-black text-center spacer-top">
+                  <h3 class="text-uppercase">Customer Reviews</h3>
+
+                  <p class="mt-2">What Says Our Customers About Us!</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget varius nunc. Integer faucibus nibh odio, ut mattis turpis blandit ullamcorper. In pellentesque urna nec lectus laculis, eget mollis tortor venenatis. Praesent nec arcu quis nisi dictum tincidunt. Integer gravida libero non nulla posere, acullamcorper turpis varius. Praesent at fringilla lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nuncquis libero erat. Praesent sapien urna, mollis id tincidunt egestas, tempor eget elit.</p>
+
+                  <p>Jecob Goeckno</p>
+
+                  <p class="manager text-black position-relative d-inline-block">Manager</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item text-center">
+              <div class="d-inline-block">
+                <div class="container-xxl text-black text-center spacer-top">
+                  <h3 class="text-uppercase">Customer Reviews</h3>
+
+                  <p class="mt-2">What Says Our Customers About Us!</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget varius nunc. Integer faucibus nibh odio, ut mattis turpis blandit ullamcorper. In pellentesque urna nec lectus laculis, eget mollis tortor venenatis. Praesent nec arcu quis nisi dictum tincidunt. Integer gravida libero non nulla posere, acullamcorper turpis varius. Praesent at fringilla lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nuncquis libero erat. Praesent sapien urna, mollis id tincidunt egestas, tempor eget elit.</p>
+
+                  <p>Jecob Goeckno</p>
+
+                  <p class="manager text-black position-relative d-inline-block">Manager</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item text-center">
+              <div class="d-inline-block">
+                <div class="container-xxl text-black text-center spacer-top">
+                  <h3 class="text-uppercase">Customer Reviews</h3>
+
+                  <p class="mt-2">What Says Our Customers About Us!</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget varius nunc. Integer faucibus nibh odio, ut mattis turpis blandit ullamcorper. In pellentesque urna nec lectus laculis, eget mollis tortor venenatis. Praesent nec arcu quis nisi dictum tincidunt. Integer gravida libero non nulla posere, acullamcorper turpis varius. Praesent at fringilla lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nuncquis libero erat. Praesent sapien urna, mollis id tincidunt egestas, tempor eget elit.</p>
+
+                  <p>Jecob Goeckno</p>
+
+                  <p class="manager text-black position-relative d-inline-block">Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-indicators mt-3 mb-0 position-static">
+            <button class="bg-primary rounded-circle active border-0" data-bs-target="#carousel-text" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+            <button class="bg-primary rounded-circle border-0" data-bs-target="#carousel-text" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button class="bg-primary rounded-circle border-0" data-bs-target="#carousel-text" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section8 py-5">
+      <div class="section-title spacer-top text-center">
+        <h2 class="text-uppercase">@pandora</h2>
+
+        <p>#Follow On Social Media</p>
+      </div>
+
+      <div class="container-xxl mt-4">
+        <div class="row container-cards">
+          <div class="col-6 col-md-3 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card1.png" class="rounded" alt="Mujer con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card2.png" class="rounded" alt="Mures con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 mt-md-0 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card3.png" class="rounded" alt="Mures con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 mt-md-0 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card4.png" class="rounded" alt="Mures con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 mt-lg-0 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card5.png" class="rounded" alt="Mures con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card6.png" class="rounded" alt="Mures con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card7.png" class="rounded" alt="Mures con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card8.png" class="rounded" alt="Mures con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card9.png" class="rounded" alt="Mures con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 text-center">
+            <a href="#" class="card-custom position-relative rounded overflow-hidden w-100">
+              <div class="card-img rounded">
+                <picture>
+                  <img src="img/09-section8/card10.png" class="rounded" alt="Mures con aretes">
+                </picture>
+              </div>
+
+              <div class="card-hover position-absolute top-50 start-50 translate-middle z-3">
+                <div class="icon z-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="container-services row mt-5 p-xxl-0">
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column flex-xxl-row text-center">
+              <div class="image rounded-circle">
+                <div class="content-image rounded-circle d-inline-block p-3">
+                  <picture>
+                    <img src="img/09-section8/service-icon-1.png" alt="Service 1">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="text spacer-top fs-14 mt-3 mt-xxl-0 ms-xxl-3 w-100">
+                <h5 class="text-uppercase">100 Day Returns</h5>
+
+                <div class="parrafos">
+                  <p>No-Nonsense Return Policy</p>
+
+                  <p>If You Aren't Happy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column flex-xxl-row text-center">
+              <div class="image rounded-circle">
+                <div class="content-image rounded-circle d-inline-block p-3">
+                  <picture>
+                    <img src="img/09-section8/service-icon-2.png" alt="Service 1">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="text spacer-top fs-14 mt-3 mt-xxl-0 ms-xxl-3 w-100">
+                <h5 class="text-uppercase">Free Shipping</h5>
+
+                <div class="parrafos">
+                  <p>Your Precious Package Is</p>
+
+                  <p>Expedited And Insured.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 mt-md-0">
+            <div class="d-flex flex-column flex-xxl-row text-center">
+              <div class="image rounded-circle">
+                <div class="content-image rounded-circle d-inline-block p-3">
+                  <picture>
+                    <img src="img/09-section8/service-icon-3.png" alt="Service 1">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="text spacer-top fs-14 mt-3 mt-xxl-0 ms-xxl-3 w-100">
+                <h5 class="text-uppercase">Certified Diamonds</h5>
+
+                <div class="parrafos">
+                  <p>All Of Our Lab Grown</p>
+
+                  <p>Diamonds Are Certified.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mt-3 mt-md-0">
+            <div class="d-flex flex-column flex-xxl-row text-center">
+              <div class="image rounded-circle">
+                <div class="content-image rounded-circle d-inline-block p-3">
+                  <picture>
+                    <img src="img/09-section8/service-icon-4.png" alt="Service 1">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="text spacer-top fs-14 mt-3 mt-xxl-0 ms-xxl-2 w-100">
+                <h5 class="text-uppercase">Free Resizing</h5>
+
+                <div class="parrafos">
+                  <p>We'll Help You Get It Just</p>
+
+                  <p>Right, After You Propose.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-primary pt-5 pb-3">
+      <div class="container-xxl">
+        <div class="content d-flex flex-column flex-lg-row text-center justify-content-lg-between w-100">
+          <div class="order-0">
+            <div class="text-center">
+              <div class="logo d-inline-block">
+                <picture>
+                  <img src="img/10-footer/logo-footer.jpg" alt="Logo de PANDORA">
+                </picture>
+              </div>
+
+              <div class="mt-3 mt-md-4">
+                <div class="social d-inline-flex align-items-center spacer-left">
+                  <div class="icon-item">
+                    <div class="bg-white p-2 rounded-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+                    </div>
+                  </div>
+
+                  <div class="icon-item">
+                    <div class="bg-white p-2 rounded-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </div>
+                  </div>
+
+                  <div class="icon-item">
+                    <div class="bg-white p-2 rounded-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>                  </div>
+                  </div>
+
+                  <div class="icon-item">
+                    <div class="bg-white p-2 rounded-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-1 order-lg-3 mt-3 mt-lg-0 text-white">
+            <h5 class="text-uppercase">Get The Newsleter</h3>
+
+            <div class="form mt-3 d-inline-block w-100">
+              <input type="email" class="form-control rounded-pill bg-primary border border-success position-relative w-100" id="exampleFormControlInput1" placeholder="Email address">
+
+              <div class="button mt-3">
+                <button class="btn text-black rounded-pill px-5 text-uppercase">Suscribe</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-2 order-lg-1 mt-3 mt-lg-0">
+            <div class="accordion d-block d-lg-none" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed text-white bg-primary text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    Categories
+                  </button>
+                </h3>
+
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse border-0">
+                  <div class="accordion-body bg-primary text-start">
+                    <ul class="text-white">
+                      <li>
+                        <a href="#">Rings</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Earrings</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Bracelets</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Pendants</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Diamonds</a>
+                      </li>
+
+                      <li>
+                        <a href="#">All Collections</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="d-none d-lg-block text-white text-start">
+              <li>
+                <h5 class="text-uppercase">Categories</h5>
+              </li>
+
+              <li>
+                <a href="#">Rings</a>
+              </li>
+
+              <li>
+                <a href="#">Earrings</a>
+              </li>
+
+              <li>
+                <a href="#">Bracelets</a>
+              </li>
+
+              <li>
+                <a href="#">Pendants</a>
+              </li>
+
+              <li>
+                <a href="#">Diamonds</a>
+              </li>
+
+              <li>
+                <a href="#">All Collections</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="order-3 order-lg-2 mt-3 mt-lg-0">
+            <div class="accordion d-block d-lg-none" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed text-white bg-primary text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Quick Links
+                  </button>
+                </h3>
+
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body bg-primary text-start">
+                    <ul class="text-white">
+                      <li>
+                        <a href="#">About us</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Contact Us</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Privacy Policy</a>
+                      </li>
+
+                      <li>
+                        <a href="#">FAO's</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Shipping & Return Policy</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Inquiry for Wholesale</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="d-none d-lg-block text-white text-start">
+              <li>
+                <h5 class="text-uppercase">Ouick Links</h5>
+              </li>
+
+              <li>
+                <a href="#">About us</a>
+              </li>
+
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="#">FAQ's</a>
+              </li>
+
+              <li>
+                <a href="#">Shipping & Return Policy</a>
+              </li>
+
+              <li>
+                <a href="#">Inquiry for Wholesale</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-credits">
+          <hr class="border-white mb-0">
+
+          <div class="d-flex flex-column flex-xl-row justify-content-between mt-3 text-center">
+            <div class="custom-icons order-0 order-xl-2 spacer-left">
+              <div class="icon bg-white d-inline-block">
+                <picture>
+                  <img src="img/10-footer/icon1.png" alt="Manera de pago">
+                </picture>
+              </div>
+
+              <div class="icon d-inline-block">
+                <picture>
+                  <img src="img/10-footer/icon2.png" alt="Manera de pago">
+                </picture>
+              </div>
+
+              <div class="icon d-inline-block">
+                <picture>
+                  <img src="img/10-footer/icon3.png" alt="Manera de pago">
+                </picture>
+              </div>
+
+              <div class="icon d-inline-block bg-white">
+                <picture>
+                  <img src="img/10-footer/icon4.png" alt="Manera de pago">
+                </picture>
+              </div>
+
+              <div class="icon d-inline-block">
+                <picture>
+                  <img src="img/10-footer/icon5.png" alt="Manera de pago">
+                </picture>
+              </div>
+
+              <div class="icon d-inline-block">
+                <picture>
+                  <img src="img/10-footer/icon6.png" alt="Manera de pago">
+                </picture>
+              </div>
+            </div>
+
+            <div class="custom-drops mt-3 mt-xl-0 order-xl-1">
+              <div class="dropup-center dropup d-inline-block">
+                <button class="btn border border-white dropdown-toggle rounded-pill text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  USD $ | United States
+                </button>
+
+                <ul class="dropdown-menu p-2 bg-primary border border-white">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Action two</a></li>
+                  <li><a href="#">Action three</a></li>
+                </ul>
+              </div>
+
+              <div class="dropup-center dropup d-inline-block ms-3">
+                <button class="btn border border-white dropdown-toggle rounded-pill text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  English
+                </button>
+
+                <ul class="dropdown-menu p-2 bg-primary border border-white">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Action two</a></li>
+                  <li><a href="#">Action three</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="order-xl-0 copy text-white d-inline-block mt-3 mt-xl-0">
+              <p>© 2023, Tormeti-Fashi Jewelry Store</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

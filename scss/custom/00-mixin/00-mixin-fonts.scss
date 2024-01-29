@@ -1,0 +1,27 @@
+@mixin rem($size){
+  $pxValue: ceil($size);
+  $remValue: ($size/16);
+  font-size: $pxValue + px;
+  font-size: $remValue + rem;
+}
+
+@mixin rem-2($size, $lineheight){
+  $pxValue: ceil($size);
+  $remValue: ($size/16);
+  font-size: $pxValue + px;
+  font-size: $remValue + rem;
+
+  $lineHeightValue: $lineheight / $size * 100;
+  $percentage: unquote("%");
+  line-height: #{$lineHeightValue}$percentage;
+}
+
+@mixin fafix(){
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}

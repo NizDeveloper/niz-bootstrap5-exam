@@ -1,0 +1,181 @@
+.section3{
+  .content{
+    .nav{
+      .item-section{
+        font-size: 14px;
+
+        a{
+          border-bottom: 2px solid $white;
+
+          &:hover{
+            transition: all 0.2s;
+            border-bottom: 2px solid $dark;
+          }
+        }
+        
+        .active{
+          font-weight: bold;
+          border-bottom: 2px solid $dark;
+        }
+      }
+    }
+
+    .tab-content{
+      .content-cards{
+        .card{
+          a{
+            .img-card{
+              background: #F7F7F7;
+
+              img{
+                transition: all 0.4s;
+              }
+            }
+
+            .sale{
+              transform: translate(10px, 10px);
+            }
+
+            .card-hover{
+              transition: all 0.5s;
+              transform: translateX(50px);
+
+              .icon-item{
+                border: 1px solid #D6D6D6;
+                width: 25px;
+                height: 25px;
+
+                .svg{
+                  svg{
+                    width: 14px;
+                    height: 14px;
+                  }
+                }
+
+                &:hover{
+                  transition: all 0.5s;
+                  background-color: #276476;
+
+                  .svg{
+                    svg{
+                      fill: #FFF;
+                    }
+                  }
+                }
+              }
+            }
+
+            &:hover{
+              .img-card{
+                img{
+                  transform: scale(1.1);
+                }
+              }
+
+              .card-hover{
+                transform: translateX(0px);
+              }
+            }
+          }
+
+          .card-body{
+            .icon-color{
+              padding: 2px;
+              width: 20px;
+              height: 20px;
+
+              .silver{
+                background-color: #E2E2E2;
+              }
+
+              .gold{
+                background-color: #ECC46A;
+              }
+
+              .pink{
+                background-color: #C79099;
+              }
+
+              .salmon{
+                background-color: #CA7972;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md){
+  .section3{
+    .content{
+      .nav{
+        .item-section{
+          a{
+            border-radius: 50rem;
+            border: 2px solid $white;
+
+            &:hover{
+              border: 2px solid #004A61;
+            }
+          }
+
+          .active{
+            border: 2px solid #004A61;
+          }
+        }
+      }
+
+      .tab-content{
+        .content-cards{
+          .card{
+            a{
+              .card-hover{
+                .icon-item{
+                  width: 30px;
+                  height: 30px;
+
+                  .svg{
+                    svg{
+                      width: 20px;
+                      height: 20px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl){
+  .section3{
+    .content{
+      .tab-content{
+        .content-cards{
+          .card{
+            a{
+              .card-hover{
+                .icon-item{
+                  width: 40px;
+                  height: 40px;
+
+                  .svg{
+                    svg{
+                      width: 25px;
+                      height: 25px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

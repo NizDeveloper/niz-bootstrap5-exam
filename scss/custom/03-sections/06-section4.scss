@@ -1,0 +1,30 @@
+.section4{
+  height: 550px;
+
+  .content-section{
+    text-align: center;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .section4{
+    .content-section{
+      width: auto;
+      text-align: left;
+      left: 60%;
+      transform: translate(0%, -50%);
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl){
+  .section4{
+    .content-section{
+      left: 50%;
+    }
+  }
+}

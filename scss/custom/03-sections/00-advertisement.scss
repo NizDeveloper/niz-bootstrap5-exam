@@ -1,0 +1,11 @@
+.advertisement{
+  .icon{
+    width: 16px;
+    height: 16px;
+    
+    &:hover{
+      transform: scale(1.2);
+      transition: all 0.2s;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@mixin box-shadow($string) {
+  -webkit-box-shadow: $string;
+  -moz-box-shadow: $string;
+  -ms-box-shadow: $string;
+  -o-box-shadow: $string;
+  box-shadow: $string;
+}
+
+@mixin box-shadow-2($string, $stringb) {
+  -webkit-box-shadow: $string, $stringb;
+  -moz-box-shadow: $string, $stringb;
+  -ms-box-shadow: $string, $stringb;
+  -o-box-shadow: $string, $stringb;
+  box-shadow: $string, $stringb;
+}
+
+@mixin box-shadow-3($string, $stringb, $stringc) {
+  -webkit-box-shadow: $string,$stringb, $stringc;
+  -moz-box-shadow: $string,$stringb, $stringc;
+  -ms-box-shadow: $string,$stringb, $stringc;
+  -o-box-shadow: $string,$stringb, $stringc;
+  box-shadow: $string,$stringb, $stringc;
+}

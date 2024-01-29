@@ -1,0 +1,85 @@
+h1, h2, h3, h4, h5, h6, p, a, span, button{
+  word-break: break-word;
+}
+
+picture{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+svg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.spacer-top{
+  > * + *{
+    margin-top: 15px;
+  }
+}
+
+.spacer-left{
+  > * + *{
+    margin-left: 15px;
+  }
+}
+
+.btn-primary-hover1{
+  &:hover{
+    transition: all 0.4s;
+    background-color: $black;
+  }
+}
+
+.btn-primary-hover2{
+  &:hover{
+    transition: all 0.4s;
+    color: $black;
+    background-color: $gray;
+    border-color: $gray;
+
+    .icon{
+      svg{
+        transition: all 0.4s;
+        fill: $black;
+      }
+    }
+  }
+}
+
+input{
+  &::placeholder{
+    transition: all 0.3s;
+  }
+
+  &:focus{
+    &::placeholder{
+      position: absolute;
+      top: 3px;
+      font-size: 10px;
+    }
+  }
+}

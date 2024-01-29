@@ -1,0 +1,23 @@
+@mixin transition-delay($string){
+  -webkit-transition-delay: $string;
+  -moz-transition-delay: $string;
+  -ms-transition-delay: $string;
+  -o-transition-delay: $string;
+  transition-delay: $string;
+}
+
+@mixin transition-delay-2($string, $stringb){
+  -webkit-transition-delay: $string, $stringb;
+  -moz-transition-delay: $string, $stringb;
+  -ms-transition-delay: $string, $stringb;
+  -o-transition-delay: $string, $stringb;
+  transition-delay: $string, $stringb;
+}
+
+@mixin transition-delay-3($string, $stringb, $stringc){
+  -webkit-transition-delay: $string, $stringb, $stringc;
+  -moz-transition-delay: $string, $stringb, $stringc;
+  -ms-transition-delay: $string, $stringb, $stringc;
+  -o-transition-delay: $string, $stringb, $stringc;
+  transition-delay: $string, $stringb, $stringc;
+}

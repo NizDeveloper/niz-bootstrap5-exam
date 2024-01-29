@@ -1,0 +1,20 @@
+@mixin transition($string) {
+  -webkit-transition: $string;
+     -moz-transition: $string;
+       -o-transition: $string;
+          transition: $string;
+}
+
+@mixin transition-2($string, $stringb) {
+  -webkit-transition: $string, $stringb;
+     -moz-transition: $string, $stringb;
+       -o-transition: $string, $stringb;
+          transition: $string, $stringb;
+}
+
+@mixin transition-timing-function($string) {
+  -webkit-transition-timing-function: $string;
+     -moz-transition-timing-function: $string;
+       -o-transition-timing-function: $string;
+          transition-timing-function: $string;
+}

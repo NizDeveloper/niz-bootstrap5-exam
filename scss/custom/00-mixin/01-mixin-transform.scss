@@ -1,0 +1,15 @@
+@mixin transform($string) {
+  -webkit-transform: $string;
+  -moz-transform: $string;
+  -ms-transform: $string;
+  -o-transform: $string;
+  transform: $string;
+}
+
+@mixin transform-2($stringa, $stringb){
+  -webkit-transform: $stringa $stringb;
+  -moz-transform: $stringa $stringb;
+  -ms-transform: $stringa $stringb;
+  -o-transform: $stringa $stringb;
+  transform: $stringa $stringb;
+}
